@@ -249,10 +249,12 @@ section {
   color: #000;
 }
 
-.features-icon {
+.arow-icon {
   fill: transparent;
   stroke: #000;
 }
+
+/* plus */
 
 .plus-icon {
   fill: #fff;
@@ -287,6 +289,8 @@ section {
   line-height: 1.6;
   color: #fefefe;
 }
+
+/* work */
 
 .work-title {
   font-family: "DM Serif Display", sans-serif;
@@ -326,10 +330,215 @@ section {
 }
 
 .work-list-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 133%;
+  color: #d4d5d5;
+  margin-bottom: 15px;
+}
+
+.work-img-car {
+  border-radius: 16px;
+  width: 378px;
+  height: 435px;
+}
+
+/* portfolio */
+
+.portfolio-home-sec-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.portfolio-home-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.portfolio-home-title-color {
+  color: #f84616;
+}
+
+.portfolio-home-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.portfolio-home-item-one {
+  border-radius: 16px;
+  width: 378px;
+  height: 311px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.2)),
+    url(/img/home/portfolio-home-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.portfolio-home-item-two {
+  border-radius: 16px;
+  width: 378px;
+  height: 311px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.2)),
+    url(/img/home/portfolio-home-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.portfolio-home-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 100px;
+  width: 187px;
+  height: 67px;
+  background-color: #141718;
+  margin-top: 230px;
+  padding: 9.5px 17px;
+}
+
+.portfolio-home-title-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #fefefe;
+}
+
+.portfolio-home-text-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #6c7275;
+}
+
+.portfolio-home-link {
+  margin: 0 auto;
+  border-radius: 999px;
+  padding: 16px 32px;
+  width: 205px;
+  height: 56px;
+  background: #fff;
+  display: flex;
+  gap: 8px;
+  margin-top: 32px;
+  margin-bottom: 56px;
+}
+
+.portfolio-home-link-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+
+.portfolio-home-text-white {
+  overflow: hidden;
+  white-space: nowrap;
+  background: #fefefe;
+  width: 100vw;
+  height: 35px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-left: calc(-50vw + 50%);
+  position: relative;
+}
+
+.portfolio-home-text-line {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: scroll-portfolio-home-text-white 20s linear infinite;
+}
+
+.portfolio-home-text-line-span {
+  display: inline-block;
+  padding-right: 2rem;
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(24px, 5vw, 40px);
+  color: black;
+}
+
+@keyframes scroll-portfolio-home-text-white {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* six */
+
+.auxiliary-back {
+  background-image: url(/img/home/background-six.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  width: 100%;
+  height: 384px;
+  background-color: #000;
+  padding: 25px;
+}
+
+.auxiliary-title {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 38px;
+}
+
+.auxiliary-title-color {
+  color: #05b178;
+}
+
+.auxiliary-text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.62;
-  color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: 38px;
+  color: #fefefe;
 }
+
+.auxiliary-btn {
+  display: flex;
+  border-radius: 999px;
+  padding: 16px 32px;
+  width: 179px;
+  height: 56px;
+  background: #fff;
+  gap: 8px;
+}
+
+.auxiliary-text-btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+
+/* footer */
