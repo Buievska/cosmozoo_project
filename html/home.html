@@ -14,13 +14,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/css/home.css" />
   </head>
   <body>
-    <header class="header-home">
+    <header class="header-section">
       <div class="container">
         <nav class="header-nav">
           <a href="./home.html" class="header-logo-link">
@@ -35,9 +35,9 @@
             <li class="header-item"><a href="">Portfolios</a></li>
             <li class="header-item"><a href="">Contact Us</a></li>
           </ul>
-          <button type="button">Book A Demo</button>
+          <button type="button" class="header-btn">Book A Demo</button>
         </nav>
-        <button type="menu">
+        <button type="menu" class="header-menu">
           <svg class="header-menu-link" width="38" height="29">
             <use href="/img/symbol-defs.svg#icon-menu"></use>
           </svg>
@@ -55,14 +55,19 @@
             Photo. Video. Social Media. Strategy One team. One vision. All
             in-house.
           </p>
-          <img
-            src="/img/home/main-img.jpg"
-            alt="Two cars"
-            class="main-img"
-            width="378"
-            height="342"
-          />
-          <p class="main-text">
+          <div class="main-border-img">
+            <img
+              src="/img/home/main-img.jpg"
+              alt="Two cars"
+              class="main-img"
+              width="378"
+              height="342"
+            />
+            <svg class="main-icon" width="91" height="91">
+              <use href="/img/symbol-defs.svg#icon-home-contact"></use>
+            </svg>
+          </div>
+          <p class="main-text-second">
             We work with influencers, creators, startups, and established
             companies — adapting each project to your vibe and vision.
           </p>
@@ -79,17 +84,17 @@
             brand support — from the first idea to the final post.
           </p>
           <ul class="features-list">
-            <li class="features-item">
+            <li class="features-item-blue">
               <h3 class="features-list-title">Photo & Video</h3>
               <p class="features-list-text">
                 Cinematic visuals with a strategy behind every frame.
               </p>
             </li>
-            <li class="features-item">
+            <li class="features-item-green">
               <h3 class="features-list-title">Social Media Management</h3>
               <p class="features-list-text">Let us run your content game.</p>
             </li>
-            <li class="features-item">
+            <li class="features-item-yelow">
               <h3 class="features-list-title">Creative Strategy</h3>
               <p class="features-list-text">
                 Brand voice, content ideas, launch plans.
@@ -148,7 +153,7 @@
             Based in LA, CosmoZoo provides full-scope content production and
             brand support — from the first idea to the final post.
           </p>
-          <h3 class="work-second-title">What we did:</h3>
+          <h3 class="work-second-title-list">What we did:</h3>
           <ul class="work-list">
             <li class="work-item">
               <p class="work-list-text">
@@ -281,30 +286,63 @@
         </nav>
         <ul class="footer-list-media">
           <li class="footer-item-media">
-            <svg class="footer-icon" width="40" height="40">
-              <use href=""></use>
-            </svg>
+            <a href="" target="_blank">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="/img/symbol-defs.svg#icon-instagram-1"></use></svg
+            ></a>
           </li>
           <li class="footer-item-media">
-            <svg class="footer-icon" width="40" height="40">
-              <use href=""></use>
-            </svg>
-          </li>
-          <li class="footer-item-media">
-            <svg class="footer-icon" width="40" height="40">
-              <use href=""></use>
-            </svg>
+            <a href="" target="_blank">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="/img/symbol-defs.svg#icon-facebook-1"></use></svg
+            ></a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <address class=""></address>
-          </li>
-          <li></li>
-          <li></li>
-        </ul>
-        <div>
-          <p>© Copyright 2025 Cosmozoo. All Rights Reserved</p>
+        <address class="footer-addres">
+          <ul class="footer-addres-list">
+            <li class="footer-addres-item">
+              <a href="" class="footer-addres-link" target="_blank"
+                >Los Angeles, California</a
+              >
+            </li>
+            <li class="footer-addres-item">
+              <a
+                href="tel:+19162980084"
+                class="footer-addres-link"
+                target="_blank"
+                >+1 (916) 298-0084</a
+              >
+            </li>
+            <li class="footer-addres-item">
+              <a
+                href="mailto:cosmozoo@gmail.com"
+                class="footer-addres-link"
+                target="_blank"
+                >cosmozoo@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-privacy">
+          <p class="footer-privacy-text">
+            © Copyright 2025 Cosmozoo. All Rights Reserved
+          </p>
+          <ul class="footer-privacy-list">
+            <li class="footer-privacy-item">
+              <a href="" class="footer-privacy-link" target="_blank"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-privacy-item">
+              <a href="" class="footer-privacy-link" target="_blank"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li class="footer-privacy-item">
+              <a href="" class="footer-privacy-link" target="_blank">Support</a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>

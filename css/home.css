@@ -1,6 +1,9 @@
 body {
+  font-family: "Inter", sans-serif;
   background-color: black;
   color: #fff;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 h1,
@@ -31,6 +34,19 @@ img {
   height: auto;
 }
 
+address {
+  font-style: normal;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,10 +60,276 @@ img {
   overflow: hidden;
 }
 
+/* common */
+
+.container {
+  max-width: 430px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header */
+.header-section .container {
+  padding: 18px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-list {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+
+.header-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  background-color: transparent;
+  border: none;
+}
+
 .header-menu-link {
   fill: transparent;
   stroke: #fff;
 }
+
+/* main */
+
+.main-section .container {
+  margin-top: 15px;
+}
+
+.main-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+  width: 416px;
+}
+
+.main-text {
+  font-size: 16px;
+  line-height: 1.62;
+  color: #fefefe;
+  width: 292px;
+  margin-bottom: 45px;
+}
+
+.main-border-img {
+  max-width: 378px;
+  height: 342px;
+  position: relative;
+  display: block;
+}
+
+.main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.main-icon {
+  position: absolute;
+  top: -40px;
+  right: 10%;
+}
+
+.main-text-second {
+  margin-top: 15px;
+  line-height: 1.62;
+  color: #d5d5d5;
+}
+
+/* features */
+
+.features-second-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.features-main-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.features-text {
+  font-family: "Inter", sans-serif;
+  line-height: 1.62;
+  color: #d5d5d5;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  align-items: center;
+}
+
+.features-item-blue {
+  border-radius: 16px;
+  padding: 10px 0;
+  width: 378px;
+  height: 120px;
+  background: #02a8ff;
+}
+
+.features-item-green {
+  border-radius: 16px;
+  padding: 10px 0;
+  width: 378px;
+  height: 120px;
+  background: #05b178;
+}
+
+.features-item-yelow {
+  border-radius: 16px;
+  padding: 10px 0;
+  width: 378px;
+  height: 120px;
+  background: #fad01d;
+}
+
+.features-list-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  text-align: center;
+  color: #141718;
+  margin-bottom: 16px;
+}
+
+.features-list-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: #141718;
+}
+
+.features-button {
+  margin: 0 auto;
+  border-radius: 998px;
+  padding: 16px 32px;
+  width: 179px;
+  height: 56px;
+  background: #fff;
+  display: flex;
+  gap: 8px;
+}
+
+.features-text-button {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+
+.features-icon {
+  fill: transparent;
+  stroke: #000;
+}
+
 .plus-icon {
   fill: #fff;
+}
+
+.plus-section {
+  background-image: url(/img/home/plus-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.plus-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.plus-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #fefefe;
+}
+
+.work-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  color: #d4d5d5;
+  margin-bottom: 10px;
+}
+
+.work-second-title {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.work-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.work-second-title-list {
+  font-family: "DM Serif Display", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.work-list-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #fff;
+  margin-bottom: 15px;
 }
