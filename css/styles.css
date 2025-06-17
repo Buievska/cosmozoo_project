@@ -219,6 +219,8 @@ section {
     justify-content: center;
     align-items: center;
   }
+
+  .
 }
 
 /* features */
@@ -334,7 +336,7 @@ section {
 }
 
 .plus-section {
-  background-image: url(/img/home/plus-background.jpg);
+  background-image: url(../img/home/plus-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -454,7 +456,7 @@ section {
   width: 378px;
   height: 311px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.2)),
-    url(/img/home/portfolio-home-1.jpg);
+    url(../img/home/portfolio-home-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -465,7 +467,7 @@ section {
   width: 378px;
   height: 311px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.2)),
-    url(/img/home/portfolio-home-2.jpg);
+    url(../img/home/portfolio-home-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -562,7 +564,7 @@ section {
 /* six */
 
 .auxiliary-back {
-  background-image: url(/img/home/background-six.jpg);
+  background-image: url(../img/home/background-six.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
