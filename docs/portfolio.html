@@ -17,7 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/aboutus.css" />
+    <link rel="stylesheet" href="/css/portfolio.css" />
   </head>
   <body>
     <header class="header-section">
@@ -58,5 +58,41 @@
         </button>
       </div>
     </header>
+    <main>
+      <!-- portfolio.html -->
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Portfolio</title>
+          <link rel="stylesheet" href="../css/portfolio.css" />
+        </head>
+        <body>
+          <main>
+            <section class="portfolio-section">
+              <h1>Our Works</h1>
+              <div class="portfolio-gallery" id="portfolio-gallery">
+                <!-- Cards will be inserted here -->
+              </div>
+              <button id="load-more" class="load-more-btn">
+                Load More Works
+              </button>
+            </section>
+
+            <div class="work-card">
+              <img src="images/tea.jpg" alt="Tea & Tranquility" />
+              <a href="/docs/shoot.html?id=tea" class="view-btn"
+                >View details</a
+              >
+            </div>
+          </main>
+          <script src="/js/portfolio.js"></script>
+        </body>
+      </html>
+    </main>
   </body>
 </html>
