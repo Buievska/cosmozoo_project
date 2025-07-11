@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -38,7 +38,9 @@
               >
             </li>
             <li class="header-item">
-              <a href="" class="header-item-title">Services</a>
+              <a href="/docs/services.html" class="header-item-title"
+                >Services</a
+              >
             </li>
             <li class="header-item">
               <a href="/docs/portfolio.html" class="header-item-title"
@@ -46,7 +48,9 @@
               >
             </li>
             <li class="header-item">
-              <a href="" class="header-item-title">Contact Us</a>
+              <a href="/docs/contact.html" class="header-item-title"
+                >Contact Us</a
+              >
             </li>
           </ul>
           <button type="button" class="header-btn">Book A Demo</button>
@@ -58,41 +62,125 @@
         </button>
       </div>
     </header>
-    <main>
-      <!-- portfolio.html -->
-      <!DOCTYPE html>
-      <html lang="en">
-        <head>
-          <meta charset="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Portfolio</title>
-          <link rel="stylesheet" href="../css/portfolio.css" />
-        </head>
-        <body>
-          <main>
-            <section class="portfolio-section">
-              <h1>Our Works</h1>
-              <div class="portfolio-gallery" id="portfolio-gallery">
-                <!-- Cards will be inserted here -->
-              </div>
-              <button id="load-more" class="load-more-btn">
-                Load More Works
-              </button>
-            </section>
 
-            <div class="work-card">
-              <img src="images/tea.jpg" alt="Tea & Tranquility" />
-              <a href="/docs/shoot.html?id=tea" class="view-btn"
-                >View details</a
-              >
-            </div>
-          </main>
-          <script src="/js/portfolio.js"></script>
-        </body>
-      </html>
+    <main>
+      <section class="works-section">
+        <div class="container">
+          <h1 class="works-title">Work That Works</h1>
+          <h2 class="works-second-title">
+            We don't just create pretty things — we create content that
+            delivers.<br /><span class="works-second-title-color"
+              >Here's a peek at what we've done for brands, creators, and
+              campaigns.</span
+            >
+          </h2>
+
+          <div id="works-container" class="works-grid"></div>
+
+          <button id="load-more-btn" class="load-more-button">
+            Load more Works
+          </button>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-logo-block">
+          <a href="/index.html" class="footer-logo-link">
+            <svg class="footer-logo" width="210" height="69">
+              <use href="/img/symbol-defs.svg#icon-logo-cosmozoo"></use>
+            </svg>
+          </a>
+        </div>
+
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="/index.html" class="footer-nav-link">Home</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/docs/aboutus.html" class="footer-nav-link">About Us</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/docs/services.html" class="footer-nav-link">Services</a>
+            </li>
+            <li class="footer-nav-item">
+              <a href="/docs/portfolio.html" class="footer-nav-link"
+                >Portfolios</a
+              >
+            </li>
+            <li class="footer-nav-item">
+              <a href="/docs/contact.html" class="footer-nav-link"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer-list-media">
+          <li class="footer-item-media">
+            <a href="" target="_blank">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="/img/symbol-defs.svg#icon-instagram-1"></use></svg
+            ></a>
+          </li>
+          <li class="footer-item-media">
+            <a href="" target="_blank">
+              <svg class="footer-icon" width="24" height="24">
+                <use href="/img/symbol-defs.svg#icon-facebook-1"></use></svg
+            ></a>
+          </li>
+        </ul>
+        <address class="footer-addres">
+          <ul class="footer-addres-list">
+            <li class="footer-addres-item">
+              <a href="" class="footer-addres-link" target="_blank"
+                >Los Angeles, California</a
+              >
+            </li>
+            <li class="footer-addres-item">
+              <a
+                href="tel:+19162980084"
+                class="footer-addres-link"
+                target="_blank"
+                >+1 (916) 298-0084</a
+              >
+            </li>
+            <li class="footer-addres-item">
+              <a
+                href="mailto:cosmozoo@gmail.com"
+                class="footer-addres-link"
+                target="_blank"
+                >cosmozoo@gmail.com</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="footer-privacy">
+          <p class="footer-privacy-text">
+            © Copyright 2025 Cosmozoo. All Rights Reserved
+          </p>
+          <ul class="footer-privacy-list">
+            <li class="footer-privacy-item">
+              <a href="" class="footer-privacy-link" target="_blank"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="footer-privacy-item">
+              <a href="" class="footer-privacy-link" target="_blank"
+                >Terms & Conditions</a
+              >
+            </li>
+            <li class="footer-privacy-item">
+              <a href="" class="footer-privacy-link" target="_blank">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/data.js"></script>
+    <script src="/js/portfolio.js"></script>
   </body>
 </html>

@@ -1,52 +1,71 @@
-const shoots = [
-  {
-    id: "tea",
-    title: "Tea & Tatami",
-    thumbnail: "../img/shoot/tea-main-mobile.jpg",
-  },
-  {
-    id: "ocean",
-    title: "Ocean Calm",
-    thumbnail: "../img/shoot/ocean-thumb.jpg",
-  },
-  {
-    id: "studio",
-    title: "Studio Vibe",
-    thumbnail: "../img/shoot/studio-thumb.jpg",
-  },
-  {
-    id: "city",
-    title: "City Lights",
-    thumbnail: "../img/shoot/city-thumb.jpg",
-  },
-  // додай ще за потреби
-];
+document.addEventListener("DOMContentLoaded", () => {
+  // --- 1. Знаходимо елементи на сторінці ---
+  const worksContainer = document.getElementById("works-container");
+  const loadMoreBtn = document.getElementById("load-more-btn");
 
-const gallery = document.getElementById("portfolio-gallery");
-const loadMoreBtn = document.getElementById("load-more");
-
-let visibleCount = 0;
-const batchSize = 2; // скільки показувати за раз
-
-function renderShoots() {
-  const nextItems = shoots.slice(visibleCount, visibleCount + batchSize);
-  nextItems.forEach((shoot) => {
-    const card = document.createElement("div");
-    card.className = "portfolio-card";
-    card.innerHTML = `
-          <img src="${shoot.thumbnail}" alt="${shoot.title}" class="portfolio-thumb" />
-          <h3>${shoot.title}</h3>
-          <a href="shoot.html?id=${shoot.id}" class="portfolio-btn">View Details</a>
-        `;
-    gallery.appendChild(card);
-  });
-  visibleCount += batchSize;
-  if (visibleCount >= shoots.length) {
-    loadMoreBtn.style.display = "none";
+  // Перевіряємо, чи існують елементи на сторінці
+  if (!worksContainer || !loadMoreBtn) {
+    console.error(
+      "Необхідні елементи (works-container або load-more-btn) не знайдені."
+    );
+    return;
   }
-}
 
-loadMoreBtn.addEventListener("click", renderShoots);
+  // --- 2. Налаштування ---
+  const itemsPerLoad = 6; // Скільки карток завантажувати за раз
+  let currentItems = 0; // Лічильник вже завантажених карток
 
-// показати перші роботи одразу
-renderShoots();
+  // --- 3. Функція для створення однієї картки ---
+  function createWorkCard(shoot) {
+    const link = document.createElement("a");
+    link.href = `shoot.html?id=${shoot.id}`;
+    link.classList.add("work-card");
+
+    // Перевіряємо, чи існують шляхи для планшета/десктопа
+    const tabletSrc = shoot.mainImageTablet
+      ? shoot.mainImageTablet.path
+      : shoot.mainImageMobile.path;
+    const desktopSrc = shoot.mainImageDesktop
+      ? shoot.mainImageDesktop.path
+      : tabletSrc;
+
+    // Створюємо HTML-структуру з тегом <picture> для адаптивних зображень
+    link.innerHTML = `
+      <picture>
+        <source media="(min-width: 1440px)" srcset="${desktopSrc}">
+        <source media="(min-width: 768px)" srcset="${tabletSrc}">
+        <img src="${shoot.mainImageMobile.path}" alt="${shoot.title}" loading="lazy">
+      </picture>
+      <div class="card-text">
+          <h3>${shoot.title}</h3>
+          <span>View details</span>
+      </div>
+    `;
+
+    return link;
+  }
+
+  // --- 4. Функція для завантаження порції робіт ---
+  function loadWorks() {
+    const worksToLoad = shoots.slice(currentItems, currentItems + itemsPerLoad);
+
+    worksToLoad.forEach((shoot) => {
+      const card = createWorkCard(shoot);
+      worksContainer.appendChild(card);
+    });
+
+    currentItems += worksToLoad.length;
+
+    // Ховаємо кнопку, якщо більше немає робіт
+    if (currentItems >= shoots.length) {
+      loadMoreBtn.style.display = "none";
+    }
+  }
+
+  // --- 5. Запуск ---
+  // Обробник кліку для кнопки
+  loadMoreBtn.addEventListener("click", loadWorks);
+
+  // Завантажуємо першу порцію (6 карток) при завантаженні сторінки
+  loadWorks();
+});
