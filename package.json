@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://annabuievska.github.io/cosmozoo_project",
+  "homepage": "https://buievska.github.io/cosmozoo_project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/buievska/cosmozoo_project.git"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
