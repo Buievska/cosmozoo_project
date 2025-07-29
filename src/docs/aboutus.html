@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us Cosmozoo</title>
+    <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -17,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/aboutus.css" />
+    <link rel="stylesheet" href="/src/css/aboutus.css" />
   </head>
   <body>
     <header class="header-section">
@@ -33,22 +34,22 @@
               <a href="/index.html" class="header-item-title">Home</a>
             </li>
             <li class="header-item">
-              <a href="/docs/aboutus.html" class="header-item-title"
+              <a href="/src/docs/aboutus.html" class="header-item-title"
                 >About Us</a
               >
             </li>
             <li class="header-item">
-              <a href="/docs/services.html" class="header-item-title"
+              <a href="/src/docs/services.html" class="header-item-title"
                 >Services</a
               >
             </li>
             <li class="header-item">
-              <a href="/docs/portfolio.html" class="header-item-title"
+              <a href="/src/docs/portfolio.html" class="header-item-title"
                 >Portfolios</a
               >
             </li>
             <li class="header-item">
-              <a href="/docs/contact.html" class="header-item-title"
+              <a href="/src/docs/contact.html" class="header-item-title"
                 >Contact Us</a
               >
             </li>
@@ -71,6 +72,7 @@
             We Don't Just Create — We Shape Brand Stories
           </h1>
           <img
+            class="main-img"
             src="/img/about-us/about-us-main.jpg"
             alt="Two people"
             width="378"
@@ -82,40 +84,44 @@
       <!-- Section two -->
       <section class="information-section">
         <div class="container">
-          <h2 class="information-title">Cosmozoo</h2>
-          <div class="information-container-text">
-            <p class="information-text">
-              We're not a big agency with layers of people and slow processes.
-              We're a tight-knit group of creatives who move fast, think boldly,
-              and work closely with each client.
-            </p>
-            <p class="information-text">
-              Our backgrounds blend filmmaking, photography, social media, and
-              branding — so we see your business from every angle. Whether
-              you're a personal brand, a startup, or an established company, we
-              bring fresh energy and premium execution to your content.
-            </p>
+          <div class="information-container-all">
+            <h2 class="information-title">Cosmozoo</h2>
+            <div class="information-container-text">
+              <p class="information-text">
+                We're not a big agency with layers of people and slow processes.
+                We're a tight-knit group of creatives who move fast, think
+                boldly, and work closely with each client.
+              </p>
+              <p class="information-text">
+                Our backgrounds blend filmmaking, photography, social media, and
+                branding — so we see your business from every angle. Whether
+                you're a personal brand, a startup, or an established company,
+                we bring fresh energy and premium execution to your content.
+              </p>
+            </div>
+            <ul class="information-list">
+              <li class="information-item">
+                <h3 class="information-list-title">Clarity Over Chaos</h3>
+                <p class="information-list-text">
+                  We believe good content should communicate, not just look
+                  cool.
+                </p>
+              </li>
+              <li class="information-item">
+                <h3 class="information-list-title">People First</h3>
+                <p class="information-list-text">
+                  We build relationships, not just deliver files.
+                </p>
+              </li>
+              <li class="information-item">
+                <h3 class="information-list-title">Done with Style</h3>
+                <p class="information-list-text">
+                  Every detail matters — and it shows in our work.
+                </p>
+              </li>
+            </ul>
           </div>
-          <ul class="information-list">
-            <li class="information-item">
-              <h3 class="information-list-title">Clarity Over Chaos</h3>
-              <p class="information-list-text">
-                We believe good content should communicate, not just look cool.
-              </p>
-            </li>
-            <li class="information-item">
-              <h3 class="information-list-title">People First</h3>
-              <p class="information-list-text">
-                We build relationships, not just deliver files.
-              </p>
-            </li>
-            <li class="information-item">
-              <h3 class="information-list-title">Done with Style</h3>
-              <p class="information-list-text">
-                Every detail matters — and it shows in our work.
-              </p>
-            </li>
-          </ul>
+
           <img
             class="information-img"
             src="/img/about-us/information.jpg"
@@ -133,50 +139,52 @@
             <use href="/img/symbol-defs.svg#icon-reviews-icon" />
           </svg>
           <h2 class="reviews-title">Not Just Pretty Content. It Works.</h2>
-          <div class="reviews-container">
-            <p class="reviews-text">
-              "CosmoZoo helped me launch my brand with confidence. The content
-              looked amazing — but more than that, it actually brought in
-              clients."
-            </p>
-            <div class="reviews-container-user">
-              <img
-                class="reviews-user"
-                src="/img/about-us/User.jpg"
-                alt="User foto"
-                width="56"
-                height="56"
-              />
-              <div class="reviews-container-user-text">
-                <h3 class="reviews-user-title">Rosiena Sanberg</h3>
-                <p class="reviews-user-text">Project Manager at Paladora</p>
+          <div class="reviews-container-all">
+            <div class="reviews-container">
+              <p class="reviews-text">
+                "CosmoZoo helped me launch my brand with confidence. The content
+                looked amazing — but more than that, it actually brought in
+                clients."
+              </p>
+              <div class="reviews-container-user">
+                <img
+                  class="reviews-user"
+                  src="/img/about-us/User.jpg"
+                  alt="User foto"
+                  width="56"
+                  height="56"
+                />
+                <div class="reviews-container-user-text">
+                  <h3 class="reviews-user-title">Rosiena Sanberg</h3>
+                  <p class="reviews-user-text">Client</p>
+                </div>
               </div>
             </div>
+            <ul class="reviews-list">
+              <li class="reviews-item">Fast, responsive communication</li>
+              <li class="reviews-item">Tasteful & strategic content</li>
+              <li class="reviews-item">
+                Full control or full support — you choose
+              </li>
+              <li class="reviews-item">LA-based, but globally minded</li>
+            </ul>
           </div>
-          <ul class="reviews-list">
-            <li class="reviews-item">Fast, responsive communication</li>
-            <li class="reviews-item">Tasteful & strategic content</li>
-            <li class="reviews-item">
-              Full control or full support — you choose
-            </li>
-            <li class="reviews-item">LA-based, but globally minded</li>
-          </ul>
         </div>
       </section>
 
       <!-- Section four -->
-
+      <div class="auxiliary-text-white">
+        <div class="auxiliary-text-line">
+          <p class="auxiliary-text-line-span">
+            Let's Work Together! ✱ Let's Work Together! ✱ Let's Work Together! ✱
+            Let's Work Together! ✱ Let's Work Together! ✱ Let's Work Together! ✱
+            Let's Work Together! ✱ Let's Work Together! ✱ Let's Work Together! ✱
+            Let's Work Together! ✱ Let's Work Together! ✱ Let's Work Together! ✱
+          </p>
+        </div>
+      </div>
       <section class="auxiliary-section">
         <div class="container">
-          <div class="auxiliary-text-white">
-            <div class="auxiliary-text-line">
-              <p class="auxiliary-text-line-span">
-                Let's Work Together! ✱ Let's Work Together! ✱ Let's Work
-                Together! ✱ Let's Work Together! ✱ Let's Work Together! ✱ Let's
-                Work Together! ✱
-              </p>
-            </div>
-          </div>
           <div class="auxiliary-back">
             <h2 class="auxiliary-title">
               Have an idea?<span class="auxiliary-title-color"
@@ -197,6 +205,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer-section">
       <div class="container">
         <div class="footer-logo-block">
@@ -213,18 +222,22 @@
               <a href="/index.html" class="footer-nav-link">Home</a>
             </li>
             <li class="footer-nav-item">
-              <a href="/docs/aboutus.html" class="footer-nav-link">About Us</a>
+              <a href="/src/docs/aboutus.html" class="footer-nav-link"
+                >About Us</a
+              >
             </li>
             <li class="footer-nav-item">
-              <a href="/docs/services.html" class="footer-nav-link">Services</a>
+              <a href="/src/docs/services.html" class="footer-nav-link"
+                >Services</a
+              >
             </li>
             <li class="footer-nav-item">
-              <a href="/docs/portfolio.html" class="footer-nav-link"
+              <a href="/src/docs/portfolio.html" class="footer-nav-link"
                 >Portfolios</a
               >
             </li>
             <li class="footer-nav-item">
-              <a href="/docs/contact.html" class="footer-nav-link"
+              <a href="/src/docs/contact.html" class="footer-nav-link"
                 >Contact Us</a
               >
             </li>
