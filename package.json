@@ -1,18 +1,29 @@
 {
-  "name": "cosmozoo_project",
+  "name": "goit-js-hw-12",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://buievska.github.io/cosmozoo_project",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/cosmozoo_project/",
     "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -r https://github.com/buievska/cosmozoo_project.git"
+    "deploy": "gh-pages -d dist --repo https://github.com/Buievska/cosmozoo_project.git"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
-    "vite": "^7.0.4"
+    "glob": "^11.0.3",
+    "postcss": "^8.4.41",
+    "postcss-sort-media-queries": "^5.2.0",
+    "vite": "^5.4.6",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-html-inject": "^1.1.2"
+  },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "flatpickr": "^4.6.13",
+    "izitoast": "^1.4.0",
+    "simplelightbox": "^2.14.3"
   }
 }
